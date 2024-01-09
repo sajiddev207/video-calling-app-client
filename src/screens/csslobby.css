@@ -1,0 +1,16 @@
+.lobby-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .user-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-list li {
+    margin: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
