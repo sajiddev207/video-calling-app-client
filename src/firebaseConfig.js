@@ -22,4 +22,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
 // const analytics = getAnalytics(app);
-export default messaging? messaging:null;
+export default messaging;
