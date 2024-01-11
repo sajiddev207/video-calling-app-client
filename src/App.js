@@ -19,7 +19,8 @@ function App() {
           <Route path="/lobby" element={<LobbyScreen />} />
           <Route path="/room/:roomId" element={<RoomPage />} />
         </Route>
-        <Route path="/" element={<LoginScreen />} />
+        <Route path="/" element={<LobbyScreen />} />
+        {/* <Route path="/" element={<LoginScreen />} /> */}
 
       </Routes>
     </div>
