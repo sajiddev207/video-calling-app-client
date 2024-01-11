@@ -95,7 +95,7 @@ const LoginScreen = () => {
   }
 
   useEffect(() => {
-    requestPermission();
+    // requestPermission();
     socket.on("room:join", handleJoinRoom);
     return () => {
       socket.off("room:join", handleJoinRoom);
