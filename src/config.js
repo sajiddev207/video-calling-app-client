@@ -1,5 +1,5 @@
 export const config = {
-    url: "https://lotusfantasy.shop",
+    url: "https://lotusfantasy.shop/server",
     // url: "https://videocalling.winners11.in",
     // url: "http://localhost:8080",
     fcmEndpoint: 'https://fcm.googleapis.com/fcm/send',
