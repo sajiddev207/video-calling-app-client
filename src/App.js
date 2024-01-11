@@ -15,13 +15,20 @@ function App() {
         <Header />
         : null}
       <Routes>
-        <Route element={<PrivateRoute />}>
-          <Route path="/lobby" element={<LobbyScreen />} />
-          <Route path="/room/:roomId" element={<RoomPage />} />
-        </Route>
         <Route path="/" element={<LoginScreen />} />
+        <Route path="/lobby" element={<LobbyScreen />} />
+        <Route path="/room/:roomId" element={<RoomPage />} />
+
 
       </Routes>
+      // <Routes>
+      //   <Route element={<PrivateRoute />}>
+      //     <Route path="/lobby" element={<LobbyScreen />} />
+      //     <Route path="/room/:roomId" element={<RoomPage />} />
+      //   </Route>
+      //   <Route path="/" element={<LoginScreen />} />
+
+      // </Routes>
     </div>
   );
 }
