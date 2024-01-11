@@ -49,7 +49,7 @@ const LoginScreen = () => {
             console.log('User data received:', user.data);
             localStorage.setItem('user', JSON.stringify(user.data));
             navigate(`/lobby`);
-            // window.location.reload();
+            window.location.reload();
           } else {
             console.log('Invalid Credential');
             toastAction.show('Invalid Credential')
