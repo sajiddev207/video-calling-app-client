@@ -58,7 +58,7 @@ const RoomPage = () => {
     setRemoteStream(null);
     await peer.close();
     socket.emit("end:call", { to: remoteSocketId, from: socket.id, toEmail: toEmail, room: roomId });
-    navigate(`/lobby`);
+    navigate(`/app/lobby`);
     window.location.reload();
   };
 
@@ -95,7 +95,7 @@ const RoomPage = () => {
       setRemoteStream(null);
       await peer.close();
       // socket.emit("end:call", { to: remoteSocketId });
-      navigate(`/lobby`);
+      navigate(`/app/lobby`);
       window.location.reload();
     }
     // socket.emit("end:call", { to: remoteSocketId });

@@ -147,7 +147,7 @@ const LobbyScreen = () => {
     (data) => {
       // audio.pause();
       const { email, room } = data;
-      navigate(`/room/${room}`);
+      navigate(`/app/room/${room}`);
     },
     [navigate]
   );

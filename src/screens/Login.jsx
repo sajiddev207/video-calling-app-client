@@ -48,7 +48,7 @@ const LoginScreen = () => {
             toastAction.show('Invalid Credential')
             console.log('User data received:', user.data);
             localStorage.setItem('user', JSON.stringify(user.data));
-            navigate(`/lobby`);
+            navigate(`/app/lobby`);
             window.location.reload();
           } else {
             console.log('Invalid Credential');
@@ -66,7 +66,7 @@ const LoginScreen = () => {
   const handleJoinRoom = useCallback(
     (data) => {
       const { email, room } = data;
-      navigate(`/room/${room}`);
+      navigate(`/app/room/${room}`);
     },
     [navigate]
   );

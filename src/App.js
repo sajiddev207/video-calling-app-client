@@ -16,8 +16,8 @@ function App() {
         : null}
       <Routes>
         <Route element={<PrivateRoute />}>
-          <Route path="/lobby" element={<LobbyScreen />} />
-          <Route path="/room/:roomId" element={<RoomPage />} />
+          <Route path="/app/lobby" element={<LobbyScreen />} />
+          <Route path="/app/room/:roomId" element={<RoomPage />} />
         </Route>
         <Route path="/" element={<LoginScreen />} />
 
