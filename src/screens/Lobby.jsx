@@ -260,7 +260,8 @@ const LobbyScreen = () => {
         <button>Join</button>
       </form> */}
       {notificationComing ? <><button class="button-36" style={{ margin: '10px' }} onClick={answerCall}>Answer</button>
-        <button class="button-37" onClick={handleCallEnd}>End </button></> :
+        {/* <button class="button-37" onClick={handleCallEnd}>End </button> */}
+        </> :
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           {userList && userList.length > 0 ?
             userList.map((element) => (
