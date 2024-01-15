@@ -3,11 +3,31 @@ class PeerService {
     if (!this.peer) {
       this.peer = new RTCPeerConnection({
         iceServers: [
+          // {
+          //   urls: [
+          //     "stun:stun.l.google.com:19302",
+          //     "stun:global.stun.twilio.com:3478",
+          //   ],
+          // },
           {
-            urls: [
-              "stun:stun.l.google.com:19302",
-              "stun:global.stun.twilio.com:3478",
-            ],
+            urls: "turn:standard.relay.metered.ca:80",
+            username: "cfc7f79989f6fcc87677374c",
+            credential: "YMknZYAy0rFDWIAH",
+          },
+          {
+            urls: "turn:standard.relay.metered.ca:80?transport=tcp",
+            username: "cfc7f79989f6fcc87677374c",
+            credential: "YMknZYAy0rFDWIAH",
+          },
+          {
+            urls: "turn:standard.relay.metered.ca:443",
+            username: "cfc7f79989f6fcc87677374c",
+            credential: "YMknZYAy0rFDWIAH",
+          },
+          {
+            urls: "turns:standard.relay.metered.ca:443?transport=tcp",
+            username: "cfc7f79989f6fcc87677374c",
+            credential: "YMknZYAy0rFDWIAH",
           },
         ],
       });

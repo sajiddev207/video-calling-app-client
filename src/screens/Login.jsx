@@ -45,7 +45,6 @@ const LoginScreen = () => {
         })
         .then(user => {
           if (user && user.data) {
-            toastAction.show('Invalid Credential')
             console.log('User data received:', user.data);
             localStorage.setItem('user', JSON.stringify(user.data));
             navigate(`/app/lobby`);
